@@ -21,7 +21,7 @@
 			height: 100%;
 		}
 		body{
-			background: url("") no-repeat center center / cover;
+			background: url("https://i.imgur.com/dFN3dms.jpeg") no-repeat center center / cover;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -31,19 +31,49 @@
 			width: 600px;
 			height: 500px;
 			background-color: rgba(0,0,0,.5);
-			border: 1-px solid #fff;
+			border: 10px solid #fff;
 			box-shadow: 0 0 60px #000;
 			backdrop-filter: blur(5px);
 			display: flex;
 			justify-content: center;
 			align-items: center;
 		}
-		.form h2{}
-		.form .group{}
-		.form label{}
-		.fotm input{}
-		.form .btn-group
-		.form .btn{}
+		.form h2{
+			margin-bottom: 20px;
+			padding-bottom: 20px;
+			border-bottom: 1px solid #fff;
+		
+		}
+		.form .group{
+			margin-bottom: 20px;
+		}
+		.form label{
+			line-height: 2;
+		}
+		.form input{
+			width: 100%;
+			border: 1px solid #aaa;
+			line-height: 3;
+			border-radius: 5px;
+		}
+		.form .btn-group{
+			font-size: 0;
+			margin-top: 50px;
+		
+		}
+		.form .btn{
+			font-size: 20px;
+			border-radius: 5px;
+			border: none;
+			background-color: #6ab4fe;
+			width: 190px;
+			padding: 10px 0;
+			color: #fff;
+			font-family: 'Noto Sans TC', sans-serif;
+		}
+		.form .btn + .btn {
+			margin-left: 20px;
+		}
 		
 
 	</style>
@@ -61,7 +91,7 @@
 			<div class="group">
 				<label for="user_password">帳號</label>
 				<input type="password" name="" id="user_password"></input>
-			<div class="group">
+			<div class="btn-group">
 				<button class="btn">登入</button>
 				<button class="btn">取消</button>
 			</div>
