@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+		@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			font-family: 'Noto Sans TC', sans-serif;
+		}
+		html, body{
+			height: 100%;
+		}
+		
+		body{
+			display: flex;
+			align-item: center;
+			background-color: #003;
+		}
+		.wrap{
+			width: 1200px;
+			display: flex;
+			margin: auto;
+		}
+		
+		.item{
+			width: 370;
+			margin: 15px;
+			text-align: center;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			transform: translateY(0px);
+			transition: 0.5s;
+		}
+		
+		.item img{
+			width: 100%;
+			vertical-align: middle;
+		}
+		.item h2{
+			border-bottom: 1px solid #888;
+			padding-bottom: 0.3em;
+			margin-bottom: 0.4em;
+			font-weight: 900;
+			transition: 0.25s;
+		}		
+		.item p{
+			line-height: 1.6;
+			font-weight: 300;
+			transition: 0.25s;
+		}
+		.item .txt{
+			padding: 20px;
+			position: relative;
+		
+		}
+		
+		.item .txt:before{
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 0;
+			top: 0;
+			left: 0;
+			border-top: 50px solid transparent;		
+			border-left: 134px solid #fff;
+			border-right: 134px solid #fff;
+			transform: translateY(-100%);
+		}
+		
+		.item:hover{
+		
+			transform: translateY(-50px);
+		}
+		
+		.item:hover .txt{
+			background-image: linear-gradient(0deg,#FB8076,#FEB85D);
+		}	
+		
+		.item:hover .txt:before{
+			content: '';
+			border-left: 134px solid #FEB85D;
+			border-right: 134px solid #FEB85D;
+			transform: translateY(-100%);
+		}
+		
+		.item:hover h2{
+			color: #fff;
+			border-bottom-color: #fff;
+			
+		}	
+		
+		.item:hover p{
+			color: #fff;
+		}	
+		
+	</style>
+</head>
+<body>	
+	<div class="wrap">
+		<div class="item">
+			<img src="https://amymhaddad.s3.amazonaws.com/morocco-blue.png">
+			<div class="txt">
+				<h2>圖片一<h2> 
+				<p>內文一</p>
+			
+			</div>
+		
+		</div>
+		<div class="item">
+			<img src="https://amymhaddad.s3.amazonaws.com/morocco-blue.png">
+			<div class="txt">
+				<h2>圖片二<h2>
+				<p>內文二</p>
+			
+			</div>
+		
+		</div>
+		<div class="item">
+			<img src="https://amymhaddad.s3.amazonaws.com/morocco-blue.png">
+			<div class="txt">
+				<h2>圖片三<h2>
+				<p>內文三</p>
+			
+			</div>
+		
+		</div>
+		<div class="item">
+			<img src="https://amymhaddad.s3.amazonaws.com/morocco-blue.png">
+			<div class="txt">
+				<h2>圖片四<h2>
+				<p>內文四</p>
+			
+			</div>
+		
+		</div>
+	</div>
+</body>
+</html>
