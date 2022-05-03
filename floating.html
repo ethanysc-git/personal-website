@@ -8,15 +8,133 @@
 		@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 		*{
 			margin: 0;
+			padding: 0;
+			list-style: none;
 
-			font-family: 'Noto Sans TC', sans-serif;
 		}
 
+		body{
+			padding: 100px 0;
+			background: linear-gradient(20deg,#3d5493,#1aa2a0) 
+			fixed center center / 100% 100%;
+			}
+		
+		.wrap{
+			width: 1200px;
+			margin: auto;
+		
+		}
+		.item{
+			display: flex;
+			align-items: center;
+			margin: 70px;
+			font-family: 'Noto Sans TC', sans-serif;
+		}
+		.item h2{
+			font-weight: 900;
+		}
+		
+		.item p{
+			font-weight: 300;
+		}
+		
+		.item .pic{
+			width: 55%;
+			flex-shrink: 0;
+		
+		}
+		.item .pic img{
+			width: 100%;
+			vertical-align: middle;
+			
+		
+		}
+		.item .txt{
+			width: 55%;
+			flex-shrink: 0;
+			padding: 50px 30px;
+			box-sizing: border-box;
+			position: relative;
+			z-index: 1;
+		}
+		
+		.item > :first-child{
+			margin-right: -10%;
+			
+		}
+		
+		.item:nth-child(1) .txt{
+			background-color: rgba(240,174,193,.8);
+		}
+		
+		.item:nth-child(2) .txt{
+			background-color: rgba(42,253,208,.8);
+		}	
+		
+		.item:nth-child(3) .txt{
+			background-color: rgba(254,201,121,.8);
+		}
+		
+		.item:nth-child(4) .txt{
+			background-color: rgba(149,219,214,.8);
+		}	
+		
+		
+		
 	</style>
 </head>
 <body>	
-	<div class="">
 
+	
+	<div class="wrap">
+		<!--item1 -->
+		<div class="item">
+			<div class="pic">
+				<img src="https://amymhaddad.s3.amazonaws.com/morocco-blue.png">
+				
+			</div>
+			<div class="txt">
+				<h2>圖片一</h2>
+				<p>內文一</p>
+			</div>
+		</div>
+
+		<!--item2 -->
+		<div class="item">
+			<div class="pic">
+				<img src="https://amymhaddad.s3.amazonaws.com/morocco-blue.png">
+				
+			</div>
+			<div class="txt">
+				<h2>圖片二</h2>
+				<p>內文二</p>
+			</div>
+		</div>
+
+		<!--item3 -->
+		<div class="item">
+			<div class="pic">
+				<img src="https://amymhaddad.s3.amazonaws.com/morocco-blue.png">
+				
+			</div>
+			<div class="txt">
+				<h2>圖片三</h2>
+				<p>內文三</p>
+			</div>
+		</div>
+
+		<!--item4 -->
+		<div class="item">
+			<div class="pic">
+				<img src="https://amymhaddad.s3.amazonaws.com/morocco-blue.png">
+				
+			</div>
+			<div class="txt">
+				<h2>圖片四</h2>
+				<p>內文四</p>
+			</div>
+		</div>
 	</div>
+	
 </body>
 </html>
