@@ -16,20 +16,24 @@
 			height: 100vh;
 			display: flex;
 			align-items: center;
+			background: linear-gradient(-30deg,#fdaecb, #e7597f,#fe8556);
 		}
 		.container{
 			width: 1200px;
 			margin: auto;
 			display: flex;
+			flex-wrap: wrap;
 		}
 		.item{
 			width: 370;
-			margin: 0 15px;
+			margin: 15px;
 			display: flex;
-		
+			background-color: rgba(255,255,255,0.6);
+			border: 1px solid #888;
+			box-shadow: 0 10px 30px rgba(160,0,0,0.5);
 		}
 		.item .pic{
-			width: 50%;
+			width: 30%;
 		
 		}
 
@@ -40,9 +44,8 @@
 		}
 
 		.item .txt{
-			width: 50%;
+			width: 70%;
 			padding:20px;
-			
 			box-sizing: border-box;
 			display: flex;
 			flex-direction: column;
@@ -50,14 +53,29 @@
 		}
 
 		.item .txt h2{
-		
+			margin-bottom: 0.4em;
 		}
 		.item .txt p{
 		
 		}		
-		.item .txt btn{
-		
-		}			
+		.item .txt .btn{
+			line-height: 1.5em;			
+			border: 1px solid #ccc;	
+			padding: 0 1em;
+			align-self: flex-end;
+			text-decoration: none;
+			border-radius: 200px;
+			margin-top: auto;
+			color: #aaa;
+			
+					
+		}	
+
+		.item .txt .btn:hover{
+			background-color: #ccc;
+			color: #fff;
+
+		}		
 	</style>
 </head>
 <body>	
@@ -71,7 +89,7 @@
 				<div class="txt">
 					<h2>標題一</h2>
 					<p>內文一</p>
-					<a href="#" clas="btn">more</a>
+					<a href="#" class="btn">more</a>
 				</div>
 			</div>
 			<div class="item">
@@ -81,7 +99,7 @@
 				<div class="txt">
 					<h2>標題二</h2>
 					<p>內文二</p>
-					<a href="#" clas="btn">more</a>
+					<a href="#" class="btn">more</a>
 				</div>
 			</div>
 			<div class="item">
@@ -91,9 +109,20 @@
 				<div class="txt">
 					<h2>標題三</h2>
 					<p>內文三</p>
-					<a href="#" clas="btn">more</a>
+					<a href="#" class="btn">more</a>
 				</div>
 			</div>
+			<div class="item">
+				<div class="pic">
+					<img src="https://amymhaddad.s3.amazonaws.com/morocco-blue.png">
+				</div>
+				<div class="txt">
+					<h2>標題四</h2>
+					<p>內文四</p>
+					<a href="#" class="btn">more</a>
+				</div>
+			</div>
+			
 		</div>
 	</div>
 </body>
